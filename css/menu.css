@@ -1,0 +1,64 @@
+
+body{
+     /* קביעת רקע ועיצוב */
+     background-image: url('../img/backgroundPic.png');
+     background-attachment: fixed;
+     background-size: 100% 100%;
+    /* הגדרות טקסט */
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2%;
+}
+* {
+    font-family: myFont;
+  }
+  @font-face {
+    font-family: myFont;
+    src: url(../TazpitRegular.ttf);
+  }
+/* הגדרת פתיחים */
+#header{
+    display: flex;
+}
+#logo{
+    margin-right: 10%;
+    width: 20%;
+    height: auto;
+    justify-content: center;
+}
+#open{
+    padding: 5%;
+}
+/* הגדרת תצוגת משחקים */
+#gameIcon{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+.pic{
+    border-radius: 25%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    margin: 50px;
+    /* הגדרות גלישה ומיקום */
+    display: flex;
+    flex-wrap: wrap;
+}
+/* הנפשת אייקונים */
+.pic:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition-duration: 0.3s; 
+    transition-duration: 0.3s;
+}
+
+.back{
+    width:20%;
+    margin:10px;
+     
+ }

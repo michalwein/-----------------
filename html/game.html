@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/game.css">
+  <script src="../js/game.js"></script>
+  <title>משחק 4 בשורה</title>
+
+</head>
+
+<body onload="addTable(),createButtons()">
+  <!-- הקדמה למשחק -->
+  <div>
+    <a class="back" href="menu.html"><img class="back" src="../img/back.png" alt="go to menu"></a>
+    <p id="player">משחק מתחיל עכשיו! <br> עליך ללחוץ על החץ <br>מעל הטור אליו תרצה<br> להכניס את הכדור<br> המטרה
+      היא:<br> לייצר שורה של 4 כדורים<br> מהצבע שלך <br>בשורה בטור או באלכסון<br> בהצלחה!</p>
+    <button id="begin" onclick="hide()"><img id="start" src="../img/start.png" alt="play"></img></button>
+  </div>
+  <!-- הגדרת טיימר -->
+  <div class="seperate-wrapper left">
+    <div id="out" class="seperate first">
+      <div id="in"></div>
+    </div>
+  </div>
+  <div id="main">
+    <div id="arrow" style="display: none;"></div>
+    <div id="board"></div>
+  </div>
+  <!-- חלון קופץ של ניצחון -->
+  <div id="win-text" class="Jtab" style="display:none;">
+    <div class="image-container">
+      <img id="winPic" src="../img/badge.png" alt="wining icon">
+    </div>
+    <h1 id="userName"></h1>
+    <h3>ניצחת במשחק</h3>
+    <p> כל הכבוד מגיע לך גביע </p>
+    <p>אז מה אתם אומרים מתחשק לכם משחק נוסף?</p>
+    
+  </div>
+  <div id="blck" style="display: none;"></div>
+  <!-- חלון קופץ של הפסד -->
+  <div id="loos-text" class="Jtab" style="display:none;">
+    <div class="image-container">
+      <img id="loosPic" src="../img/hourglass.png" alt="loosing icon">
+    </div>
+
+    <h3>המשחק נגמר</h3>
+    <p>הזמן פשוט טס כשנהנים </p>
+    <p>אז מה אתם אומרים מתחשק לכם משחק נוסף?</p>
+    <div class="btn">
+      <!-- כפתורים לחזרה על המשחק או לדף הבית -->
+      <button class="pic" onclick="location.reload();"><img class="pic" src="../img/rotation.png"
+          alt="restart"></button>
+      <form action="../html/menu.html">
+        <button class="pic"><img class="pic" src="../img/home-page.png" alt="home page"></button>
+      </form>
+    </div>
+  </div>
+  
+</body>
+
+</html>

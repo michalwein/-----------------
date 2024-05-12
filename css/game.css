@@ -1,0 +1,133 @@
+body {
+
+  /* קביעת רקע ועיצוב */
+  background-image: url('../img/abstract-uv-ultraviolet-light-composition.jpg');
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  display: flex; 
+  font-family: myFont;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(../TazpitRegular.ttf);
+}
+
+/* אנימציה וסגנון חיצים */
+#arrow {
+  /* animation-name: pulse; */
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+
+/* לחצן התחלה */
+#begin{
+  margin-right: 200px;
+  animation: pulse 3s infinite;
+}
+#start{
+  height: 100px;
+  width: 100px;
+}
+
+/* מיקום הטקסט והטיימר ועיצוב בסיסי */
+#player{
+  margin: 5%;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.back {
+  width: 15%;
+
+}
+
+
+/* הגדרת חלונות קופצים */
+.Jtab{
+   font-size: 2em;
+  font-family: myFont;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2%;
+  position: fixed;
+ margin-right: 350px;
+  /* שינוי המיקום שיהיה מעל לכל הפריטים האחרים */
+  z-index: 6;
+  background: linear-gradient(to right,#f24fbe, #4587F2, #3FC3E3, #59cbfc);
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 2%;
+box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+  animation: shake 3s infinite; -
+}
+
+
+
+/* השחרת מסך מתחת לחלון ניצחון/הפסד */
+#blck {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
+
+
+
+/* הגדרת כפתורים בסיום משחק */
+.btn,
+#players {
+  display: flex;
+}
+.pic {
+  align-items: center;
+  height: 70px;
+  width: auto;
+  margin-right: 60px;
+  margin-top: 10px;
+}
+
+button {
+  border-color: transparent;
+  background-color: transparent;
+  font-family: myFont;
+  font-size: 1em;
+}
+
+.image-container {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-right: 230px;
+}
+
+#loosPic , #winPic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* הגדרות צבעים פנים וחוץ של טיימר */
+#out {
+  width: 20%;
+  height: 90vh;
+}
+
+#in {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(249, 237, 237);
+  box-shadow: -6px 8px 28px -2px rgba(0, 0, 0, 0.86);
+  border-radius: 5%;
+}
+
+.left {
+  width: 5%;
+}
